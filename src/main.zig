@@ -1,7 +1,7 @@
 const std = @import("std");
 
-// const day1a15 = @import("./aoc2015/day1a.zig");
-const day1b15 = @import("./aoc2015/day1b.zig");
+// const day1a15 = @import("./aoc2015/day1a.zig"); // Solved
+// const day1b15 = @import("./aoc2015/day1b.zig"); // Solved
 // const day2a15 = @import("./aoc2015/day2a.zig");
 // const day2b15 = @import("./aoc2015/day2b.zig");
 // const day3a15 = @import("./aoc2015/day3a.zig");
@@ -54,7 +54,7 @@ const day1b15 = @import("./aoc2015/day1b.zig");
 // const day4a20 = @import("./aoc2020/day4a.zig");
 // const day4b20 = @import("./aoc2020/day4b.zig");
 
-// const day1a21 = @import("./aoc2021/day1a.zig");
+const day1a21 = @import("./aoc2021/day1a.zig"); // Solved
 // const day1b21 = @import("./aoc2021/day1b.zig");
 // const day2a21 = @import("./aoc2021/day2a.zig");
 // const day2b21 = @import("./aoc2021/day2b.zig");
@@ -73,10 +73,10 @@ const day1b15 = @import("./aoc2015/day1b.zig");
 // const day4b22 = @import("./aoc2022/day4b.zig");
 
 pub fn main() !void {
-    try run(day1b15);
+    try run(day1a21);
 }
 
 fn run(day: anytype) !void {
-    day.main();
-    std.debug.print("\n", .{});
+    try day.main();
+    // std.debug.print("\n", .{});
 }
