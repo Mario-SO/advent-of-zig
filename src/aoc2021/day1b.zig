@@ -21,10 +21,9 @@ pub fn main() !void {
         window[2] = try std.fmt.parseInt(usize, line, 10);
 
         var new_sum = window[0] + window[1] + window[2];
+        defer last_sum = new_sum;
 
         if (new_sum > last_sum) increments += 1;
-
-        last_sum = new_sum;
     }
     print("Result: {}\n", .{increments});
 }
