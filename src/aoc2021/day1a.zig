@@ -15,7 +15,3 @@ pub fn main() !void {
     }
     std.log.info("Number of times increased: {d}", .{increased});
 }
-
-// pub fn main() void {
-//     std.log.info("Number of times increased: {d}", .{n_increased()});
-// }
