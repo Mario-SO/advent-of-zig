@@ -1,6 +1,5 @@
 const input = @embedFile("./i1.txt");
 const std = @import("std");
-const print = std.log.debug;
 
 pub fn main() !void {
     var it = std.mem.tokenize(u8, input, "\n");
