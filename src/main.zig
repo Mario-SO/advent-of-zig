@@ -24,6 +24,9 @@ const day1b16 = @import("./aoc2016/day1b.zig");
 // const day1a22 = @import("./aoc2022/day1a.zig");
 // const day1b22 = @import("./aoc2022/day1b.zig");
 
+// const day1a23 = @import("./aoc2023/day1a.zig");
+// const day1b23 = @import("./aoc2023/day1b.zig");
+
 pub fn main() !void {
     try run(day1b16);
 }
