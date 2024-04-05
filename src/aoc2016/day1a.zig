@@ -1,6 +1,8 @@
 const input = @embedFile("./i1.txt");
 const std = @import("std");
 
+// Moving clockwise => R
+// ----------------------------
 //          3
 //       ┌─────┐
 //       │North│
@@ -12,6 +14,8 @@ const std = @import("std");
 //       │South│
 //       └─────┘
 //          1
+// ----------------------------
+// Moving counter clockwise => L
 
 const Direction = enum(u32) {
     North = 3, // Up
@@ -35,8 +39,8 @@ pub fn main() !void {
         const dist = try std.fmt.parseInt(i32, instr[1..], 10);
 
         switch (turn) {
-            'L' => dir = @as(Direction, @enumFromInt((@intFromEnum(dir) + 3) % 4)),
             'R' => dir = @as(Direction, @enumFromInt((@intFromEnum(dir) + 1) % 4)),
+            'L' => dir = @as(Direction, @enumFromInt((@intFromEnum(dir) + 3) % 4)),
             else => return error.InvalidTurn,
         }
 
