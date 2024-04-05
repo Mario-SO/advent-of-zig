@@ -3,8 +3,8 @@ const std = @import("std");
 // const day1a15 = @import("./aoc2015/day1a.zig"); // Solved
 // const day1b15 = @import("./aoc2015/day1b.zig"); // Solved
 
-const day1a16 = @import("./aoc2016/day1a.zig");
-// const day1b16 = @import("./aoc2016/day1b.zig");
+// const day1a16 = @import("./aoc2016/day1a.zig"); // Solved
+const day1b16 = @import("./aoc2016/day1b.zig");
 
 // const day1a17 = @import("./aoc2017/day1a.zig");
 // const day1b17 = @import("./aoc2017/day1b.zig");
@@ -25,7 +25,7 @@ const day1a16 = @import("./aoc2016/day1a.zig");
 // const day1b22 = @import("./aoc2022/day1b.zig");
 
 pub fn main() !void {
-    try run(day1a16);
+    try run(day1b16);
 }
 
 fn run(day: anytype) !void {
